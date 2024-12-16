@@ -1,0 +1,16 @@
+App\Entity\User:
+    user_admin:
+        username: 'admin'
+        email: 'admin@streaming.com'
+        password: '\$2y\$13\$hY8tHG8Yp1ZzWCFDvLwFNO0PX5oxSxSft4NOL3zM0fC1esZ.XB2fi' # admin123
+        roles: ['ROLE_ADMIN']
+        accountStatus: App\Enum\UserAccountStatusEnum::ACTIVE
+        currentSubscription: '@subscription_premium'
+
+    user_{1..5}:
+        username: '<username()>'
+        email: '<email()>'
+        password: '\$2y\$13\$A4xC7ZFn9D.rZ4QlpFqXhO1H3l04.ZFPZrbX3Qb0nqn9ckgpPAZt.' # user123
+        roles: ['ROLE_USER']
+        accountStatus: App\Enum\UserAccountStatusEnum::ACTIVE
+        currentSubscription: '@subscription_basic'

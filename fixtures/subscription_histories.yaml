@@ -1,0 +1,6 @@
+App\Entity\SubscriptionHistory:
+    sub_history_{1..20}:
+        subscriber: '@user_*'
+        subscription: '@subscription_basic'
+        startAt: '<dateTimeBetween("-1 year", "now")>'
+        endAt: '<dateTimeBetween("now", "+1 year")>'

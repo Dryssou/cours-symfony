@@ -1,0 +1,5 @@
+App\Entity\PlaylistMedia:
+    playlist_media_{1..10}:
+        playlist: '@playlist_1'
+        media: '@movie_1'
+        addedAt: '<dateTimeBetween("-1 year", "now")>'

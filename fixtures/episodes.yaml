@@ -1,0 +1,6 @@
+App\Entity\Episode:
+    episode_{1..150}:
+        title: '<sentence(3)>'
+        duration: '<numberBetween(20, 60)>'
+        releasedAt: '<dateTimeBetween("-5 years", "now")>'
+        season: '@season_*'

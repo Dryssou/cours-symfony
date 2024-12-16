@@ -1,0 +1,5 @@
+App\Entity\PlaylistSubscription:
+    playlist_sub_{1..10}:
+        subscriber: '@user_1'
+        playlist: '@playlist_1'
+        subscribedAt: '<dateTimeBetween("-1 year", "now")>'

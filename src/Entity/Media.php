@@ -51,7 +51,7 @@ class Media
      * @var Collection<int, Language>
      */
     #[ORM\ManyToMany(targetEntity: Language::class, inversedBy: 'medias')]
-    private Collection $languages;
+    #[ORM\JoinTable(name: 'media_language')]    private Collection $languages;
 
     #[ORM\Column(type: Types::TEXT)]
     private ?string $shortDescription = null;
